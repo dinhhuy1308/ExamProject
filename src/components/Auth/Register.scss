@@ -34,31 +34,20 @@
             width: 100%;
             height: 40px;
             margin: 20px 0;
-
-            &:disabled {
-                background-color: #ddd;
-                color: #afafaf;
-                cursor: no-drop;
-            }
-
-            .loaderIcon {
-                margin-right: 5px;
-                font-size: 14px;
-                animation: spin-animation 0.5s infinite linear;
-            }
-
-            @keyframes spin-animation {
-                0% {
-                  transform: scale(1) rotate(0deg);
-                }
-                100% {
-                  transform: scale(1) rotate(360deg);
-                }
-              }
         }
 
         .back {
             cursor: pointer;
+        }
+
+        .pass-group {
+            position: relative;
+
+            .icon-eyes {
+                position: absolute;
+                right: 10px;
+                bottom: 25px;
+            }
         }
     }
 }
